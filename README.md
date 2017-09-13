@@ -1,28 +1,17 @@
 # TSUnitTestKarma
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.4.1.
+Este projeto foi gerado com [Angular CLI](https://github.com/angular/angular-cli) versão 1.4.1.
+Ao criar o projeto com o angular cli ele já vem com o arquivo karma.config.js, que provê toda configuração 
+necessária para o desenvolvimento dos testes unitários. Desta forma basta apenas criar os arquivos com extensão 
+.spec.ts em quaquer nível abaixo de src/app que as cfigurações do karma irão identificaos specs e executar os testes.   
 
-## Development server
+Criei uma classe Calculator e testei com a calculator.specs.ts como é possível ver no projeto.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+## Executando a aplicação
 
-## Code scaffolding
+Execute `ng serve` para executar a aplicação. Endereço padrão `http://localhost:4200/`. 
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Teste unitário
 
-## Build
+Para executar os testes disponíveis em src/app/tests execute `ng test`.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-Before running the tests make sure you are serving the app via `ng serve`.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
