@@ -14,7 +14,6 @@ export class RegisterComponent implements OnInit {
   
   ngOnInit() {
     this.person = new Person();
-    console.log(this.person);
   }
 
   saveUser() {
