@@ -10,7 +10,7 @@
                       <!-- Name -->
                       <label class="control-label"  for="name">Name</label>
                       <div class="controls">
-                        <input type="text" id="name" name="name"  class="form-control" placeholder="Input your full name here">
+                        <input type="text" id="name" [(ngModel)]="person.name" name="name"  class="form-control" placeholder="Input your full name here">
                       </div>
                   </div>
 
@@ -18,7 +18,7 @@
                     <!-- Username -->
                     <label class="control-label"  for="username">Username</label>
                     <div class="controls">
-                      <input type="text" id="username" name="username"  class="form-control" placeholder="Username can contain any letters or numbers, without spaces">
+                      <input type="text" id="username" [(ngModel)]="person.username" name="username"  class="form-control" placeholder="Username can contain any letters or numbers, without spaces">
                     </div>
                   </div>
                
@@ -26,7 +26,7 @@
                     <!-- E-mail -->
                     <label class="control-label" for="email">E-mail</label>
                     <div class="controls">
-                      <input type="text" id="email" name="email" class="form-control" placeholder="Please provide your E-mail">
+                      <input type="text" id="email" [(ngModel)]="person.email" name="email" class="form-control" placeholder="Please provide your E-mail">
                     </div>
                   </div>
                
@@ -34,7 +34,7 @@
                     <!-- Password-->
                     <label class="control-label" for="password">Password</label>
                     <div class="controls">
-                      <input type="password" id="password" name="password" class="form-control" placeholder="Password should be at least 4 characters">
+                      <input type="password" [(ngModel)]="person.password" id="password" name="password" class="form-control" placeholder="Password should be at least 4 characters">
                     </div>
                   </div>
                
@@ -42,14 +42,14 @@
                     <!-- Password -->
                     <label class="control-label"  for="password_confirm">Password (Confirm)</label>
                     <div class="controls">
-                      <input type="password" id="password_confirm" name="password_confirm" class="form-control" placeholder="Please confirm password">
+                      <input type="password" [(ngModel)]="person.password_confirm" id="password_confirm" name="password_confirm" class="form-control" placeholder="Please confirm password">
                     </div>
                   </div>
                   <br>
                   <div class="control-group">
                     <!-- Button -->
                     <div class="controls">
-                      <button class="btn btn-success">Register</button>
+                      <button class="btn btn-success" (click)="saveUser()">Register</button>
                     </div>
                   </div>
                 </fieldset>
