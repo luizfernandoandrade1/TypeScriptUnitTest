@@ -19,9 +19,7 @@ export class RegisterComponent implements OnInit {
   }
 
   saveUser() {
-    console.log(this.person);
-    console.log(this.personName);
-    console.log('Hi there!! ',this.personService.savePerson())
+    this.personService.savePerson(this.person);
   }
 
 }
