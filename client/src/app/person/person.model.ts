@@ -6,10 +6,5 @@ export class Person {
     name?: string;
     userName?: string;
     password?: string;
-
-    constructor () {
-        this.id = UUID.UUID();
-    }
-
     
 }

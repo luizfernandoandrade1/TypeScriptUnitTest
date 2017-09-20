@@ -40,3 +40,34 @@ testem.log
 # System Files
 .DS_Store
 Thumbs.db
+
+
+#server
+
+/server/.gradle
+/server/build/
+/server/!gradle/wrapper/gradle-wrapper.jar
+
+### STS ###
+/server/.apt_generated
+/server/.classpath
+/server/.factorypath
+/server/.project
+/server/.settings
+/server/.springBeans
+
+### IntelliJ IDEA ###
+/server/.idea
+/server/*.iws
+/server/*.iml
+/server/*.ipr
+
+### NetBeans ###
+/server/nbproject/private/
+/server/build/
+/server/nbbuild/
+/server/dist/
+/server/nbdist/
+/server/.nb-gradle/
+/server/bin/
+
