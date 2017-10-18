@@ -24,7 +24,7 @@ public class PersonResource {
 	@ResponseBody
 	public ResponseEntity<?> add(@RequestBody Person person) {
 		repository.save(person);
-        return ResponseEntity.ok("Hi there! ");
+        return ResponseEntity.ok("Every thing is ok!");
     }
 
 }
